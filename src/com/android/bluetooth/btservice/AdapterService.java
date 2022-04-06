@@ -2655,7 +2655,7 @@ public class AdapterService extends Service {
     }
 
     boolean setScanMode(int mode, int duration) {
-        enforceBluetoothPermission(this);
+        enforceBluetoothPrivilegedPermission(this);
 
         setDiscoverableTimeout(duration);
 
