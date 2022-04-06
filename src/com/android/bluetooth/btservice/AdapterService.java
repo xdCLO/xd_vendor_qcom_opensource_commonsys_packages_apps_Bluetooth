@@ -1563,6 +1563,7 @@ public class AdapterService extends Service {
             if (service == null) {
                 return false;
             }
+            enforceBluetoothPrivilegedPermission(service);
             return service.setDiscoverableTimeout(timeout);
         }
 
